@@ -1,0 +1,134 @@
+
+/** CSS for Custom and Overrides **/
+
+/* Body, Headers, and Globals */
+
+* {
+  box-sizing: border-box;
+}
+
+a, a:hover, a:active, a:focus {
+   outline: 0;
+}
+
+.header-panel {
+	background: url('../img/misc/topbg.jpg') no-repeat top center fixed;
+  z-index: 3;
+	height: 250px;
+}
+
+.header-panel div {
+  position: relative;
+  height: 100%;
+}
+
+.header-panel h1 {
+  color: #FFF;
+  letter-spacing: normal;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 3px;
+  position: absolute;
+  bottom: 10px;
+  padding-left: 35px;
+}
+
+.ad-space {
+  height: 250px;
+  color: #000;
+}
+
+.ad-space.small {
+  height: 100px;
+}
+
+.ad-space.small.medium {
+  background: #eee;
+}
+
+/* Nav */
+
+.menu {
+  overflow: auto;
+  padding: 0;
+}
+.menu ul {
+  padding: 0;
+  margin: 7px 0;
+}
+.menu ul li {
+  list-style: none;
+  padding: 20px 0 20px 50px;
+  font-size: 15px;
+  font-weight: normal;
+  cursor: pointer;
+  transition:  background 0.3s ease-in-out;
+}
+.menu ul li.active {
+  background-color: #57812D;
+  color: #FFF;
+  letter-spacing: normal;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 3px;
+  position: relative;
+  transition:  background 0.7s ease-in-out;
+}
+
+.menu ul li.active:hover {
+  background-color: #57812D;
+}
+
+.menu ul li:hover {
+  background-color: #EDE6E6;
+  transition:  all 0.3s ease-in-out;
+}
+.menu ul li a {
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}
+
+#ducks-logo {
+  visibility: hidden;
+  height: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease-out;
+}
+
+/* Main Body */
+
+.page {
+  transform: translateY(1080px);
+  transition: transform 0 linear;
+  display: none;
+  opacity: 0;
+  font-size: 16px;
+}
+
+.page.active {
+  transform: translateY(0px);
+  transition: all 0.3s ease-out;
+  display: block;
+  opacity: 1;
+}
+
+.page#welcome {
+  transform: translateY(0px);
+}
+
+.page .panel-heading {
+  background-color: #03A9F4;
+  color: #FFF;
+  letter-spacing: normal;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 3px;
+}
+
+.panel-body li.list-group-item {
+  padding-bottom: 20px;
+}
+
+.panel-body li.list-group-item span {
+  display: block;
+}
+
+.panel-body li.list-group-item div span {
+  display: inline-block;
+}

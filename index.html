@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Waterfowl ID, Duck ID, Duck Sounds, Duck Photos, Goose ID: Ducks Unlimited</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Twitter Bootstrap -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design for Bootstrap -->
+    <link href="dist/css/roboto.min.css" rel="stylesheet">
+    <link href="dist/css/material-fullpalette.min.css" rel="stylesheet">
+    <link href="dist/css/ripples.min.css" rel="stylesheet">
+
+    <!-- Ekko Lightbox for Bootstrap -->
+    <link href="dist/ekko/ekko-lightbox.min.css" rel="stylesheet">
+
+    <!-- CSS for Custom and Overrides -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+  </head>
+  <body>
+
+    <!--[if lt IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="header-panel shadow-z-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-3">
+            <h1>
+              <img src="img/misc/logoLarge.gif">
+              <br>
+              Waterfowl Identification
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid main">
+      <div class="row">
+        <nav class="col-md-2 menu">
+          <ul>
+            <img src="img/misc/logoLarge.gif" id="ducks-logo">
+            <li class="withripple" data-target="#welcome">Welcome</li>
+            <li class="withripple" data-target="#blue-winged-teal">Blue-winged Teal</li>
+            <li class="withripple" data-target="#mallard">Mallard</li>
+            <li class="withripple" data-target="#northern-pintail">Northern Pintail</li>
+          </ul>
+          <div class="alert ad-space small alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            <h4>Ad Space</h4>
+          </div>
+        </nav>
+
+        <div class="pages col-md-7">
+          <div class="col-md-12">
+            <section class="well page active">
+              <h1 class="header"></h1>
+              <hr>
+              <aside class="panel panel-default">
+                <div class="panel-heading">Quick Stats</div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <ul class="list-group">
+                        <li class="list-group-item"><b>Latin:</b><span id="latin"></span></li>
+                        <li class="list-group-item"><b>Avg. length:</b><span id="avgLength"></span></li>
+                        <li class="list-group-item"><b>Avg. weight:</b><span id="avgWeight"></span></li>
+                        <li class="list-group-item">Listen To Call
+                          <audio id="duckCall" preload="auto"></audio>
+                          <div>
+                            <span class="glyphicon glyphicon-play-circle" aria-hidden="true" onclick="document.getElementById('duckCall').play()"></span>
+                            <span class="glyphicon glyphicon-pause" aria-hidden="true" onclick="document.getElementById('duckCall').pause()"></span>
+                            <span class="glyphicon glyphicon-volume-down" aria-hidden="true" onclick="document.getElementById('duckCall').volume-=0.25"></span>
+                            <span class="glyphicon glyphicon-volume-up" aria-hidden="true" onclick="document.getElementById('duckCall').volume+=0.25"></span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                        </div>
+                        <a class="left carousel-control" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+              <article id="content">
+              </article>
+              <div class="alert ad-space small medium alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert">x</button>
+                <h4>Ad Space</h4>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="alert ad-space alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            <h4>Ad Space</h4>
+          </div>
+        </div>
+    </div>
+
+    <!-- Twitter Bootstrap -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Material Design for Bootstrap -->
+    <script src="dist/js/material.min.js"></script>
+    <script src="dist/js/ripples.min.js"></script>
+
+    <!-- Ekko Lightbox for Bootstrap -->
+    <script src="dist/ekko/ekko-lightbox.min.js"></script>
+
+    <!-- Data Model -->
+    <script src="js/datamodel.js"></script>
+
+    <!-- Data Model -->
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
